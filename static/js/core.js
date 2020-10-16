@@ -7,7 +7,7 @@ inpanel.config(['$routeProvider', function ($routeProvider) {
         var r = {
             templateUrl: template_path + '/partials/' + t + '.html?_v=' + _v,
             controller: c,
-            reloadOnSearch: false
+            reloadOnSearch: true
         };
         if (!a) r.resolve = Auth;
         return r;
