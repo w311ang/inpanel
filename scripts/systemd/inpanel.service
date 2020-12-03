@@ -6,7 +6,11 @@ Type = simple
 User = root
 Group = root
 PIDFile = /var/run/inpanel.pid
-ExecStart = /usr/bin/python /usr/local/inpanel/inpanel.py
+# WorkingDirectory = /usr/local/inpanel
+# ExecStartPre =
+ExecStart = /usr/bin/python /usr/local/inpanel/server.py
+# ExecReload =
+# ExecStop =
 StartLimitInterval = 30min
 
 [Install]
